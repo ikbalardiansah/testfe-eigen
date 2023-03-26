@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pengurangan dari jumlah diagonal</title>
+</head>
+
+<body>
+
+    <!-- Matrix = [[1, 2, 0], [4, 5, 6], [7, 8, 9]]
+
+    diagonal pertama = 1 + 5 + 9 = 15
+    diagonal kedua = 0 + 5 + 7 = 12
+
+    maka hasilnya adalah 15 - 12 = 3 -->
+
+    <script>
+        var Matrix = [[1, 2, 0], [4, 5, 6], [7, 8, 9]]
+
+        var number = Matrix[0][0]
+        var number1 = Matrix[1][1]
+        var number2 = Matrix[2][2]
+        var diagonal1 = number + number1 + number2
+
+        var number3 = Matrix[0][2]
+        var number4 = Matrix[1][1]
+        var number5 = Matrix[2][0]
+        var diagonal2 = number3 + number4 + number5
+
+        var join = diagonal1 - diagonal2
+
+        console.log(join)
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reverse Kata</title>
+</head>
+
+<body>
+
+    <!-- Terdapat string "NEGIE1", silahkan reverse alphabet nya dengan angka tetap diakhir kata Hasil = "EIGEN1" -->
+
+    <script>
+        let reservedString = "NEGIE1";
+        let num = 1;
+
+        let reversed = reservedString.split("").reverse().join("");
+        let reservedWithNum = reversed + num.toString();
+        let myArr = reservedWithNum.split("")
+        let remove = myArr.splice(0, 1)
+        let join = myArr.join("")
+    
+        console.log(join)
+
+    </script>
+</body>
+
+</html>

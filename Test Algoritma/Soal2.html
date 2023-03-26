@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jumlah Karakter terpanjang</title>
+</head>
+
+<body>
+
+
+    <!-- Diberikan contoh sebuah kalimat, silahkan cari kata terpanjang dari kalimat tersebut, jika ada kata dengan panjang yang sama silahkan ambil salah satu -->
+
+    <script>
+        function carakataterpanjang(str) {
+            const kata = str.split(' ');
+            let kataterpanjang = '';
+
+            for (let i = 0; i < kata.length; i++) {
+                if (kata[i].length > kataterpanjang.length) {
+                    kataterpanjang = kata[i];
+                }
+            }
+            return kataterpanjang;
+        }
+
+        const sentence = "Saya sangat senang mengerjakan soal algoritma";
+        const longestWord = carakataterpanjang(sentence);
+        const jumlah = longestWord.length
+        console.log(longestWord + " : " + jumlah + " karakter"); 
+    </script>
+</body>
+
+</html>
